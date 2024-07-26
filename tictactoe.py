@@ -3,7 +3,6 @@ from sys import exit
 
 pygame.init()
 
-# Constants
 WIDTH, HEIGHT = 300, 300
 LINE_WIDTH = 15
 BOARD_ROWS = 3
@@ -24,8 +23,6 @@ FONT = pygame.font.SysFont(None, 30)
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Tic Tac Toe")
 screen.fill(BG_COLOR)
-
-# Board
 board = [[0] * BOARD_COLS for _ in range(BOARD_ROWS)]
 
 def draw_lines():
